@@ -37,6 +37,12 @@ rm -r Music/ Public/ Templates/ Videos examples.desktop
 echo "SETUP~Make the usual directories: git, bin, Programs"
 mkdir git bin Programs
 
+echo "SETUP~Configure git editor, name and email"
+git config --global core.editor "vim"
+git config --global user.name "Morgan Taschuk"
+git config --global user.email "morgan.taschuk@oicr.on.ca"
+
+
 echo "SETUP~Mounting the H and R Drives."
 sudo apt-get install cifs-utils
 sudo mkdir /media/H /media/R

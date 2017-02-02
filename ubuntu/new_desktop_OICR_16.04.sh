@@ -77,3 +77,9 @@ apt-get install \
 echo "SETUP~Opening website that has IM setup instructions. Close browser to continue."
 firefox --new-tab https://connect.oicr.on.ca/it/Lists/FAQ/DispForm.aspx?ID=3&Source=https%3A%2F%2Fconnect.oicr.on.ca%2Fit%2FSitePages%2FKnowledge%2520Base.aspx&ContentTypeId=0x010093843C9A0B8C4D4DA449C8E4A2344403
 
+echo "SETUP~Install programming tools"
+sudo apt install r-base-core
+wget -O rstudio.deb https://download1.rstudio.org/rstudio-1.0.136-amd64.deb
+sudo dpkg -i rstudio.deb && sudo apt-get install -f
+
+sudo apt-get install gimp
